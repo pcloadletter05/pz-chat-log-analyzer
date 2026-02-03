@@ -1,0 +1,58 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  padding: 2rem;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+}
+
+.upload-label {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.results {
+  margin-top: 2rem;
+}
+
+.results h2 {
+  color: #444;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.message-list {
+  max-height: 500px;
+  overflow-y: auto;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+.message {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #f0f0f0;
+  font-family: monospace;
+  font-size: 0.9rem;
+}
+
+.message:last-child {
+  border-bottom: none;
+}
+
+.message:hover {
+  background-color: #f9f9f9;
+}
