@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nfeat: add Vite React TypeScript project structure\n\n- Add package.json with Vite, React 18, TypeScript dependencies\n- Add basic chat log analyzer UI with file upload\n- Add ESLint, TypeScript configs\n- Add .gitignore for node_modules, dist, .env\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)",
+      "Bash(git commit:*)"
     ]
   }
 }
