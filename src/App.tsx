@@ -2,7 +2,6 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [logContent, setLogContent] = useState<string>('')
   const [parsedMessages, setParsedMessages] = useState<string[]>([])
 
   const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -11,7 +10,6 @@ function App() {
       const reader = new FileReader()
       reader.onload = (e) => {
         const text = e.target?.result as string
-        setLogContent(text)
         parseLog(text)
       }
       reader.readAsText(file)
